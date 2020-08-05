@@ -5,6 +5,7 @@ import ImageHotel from '../components/imageHotel';
 const IndexPage = () => (
   <Layout>
     <ImageHotel />
+    
   </Layout>
 )
 
