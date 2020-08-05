@@ -1,10 +1,10 @@
 import React from "react"
 import Layout from '../components/layout';
 
-const IndexPage = () => (
+const WePage = () => (
   <Layout>
-    <h1>Index</h1>
+    <h1>We</h1>
   </Layout>
 )
 
-export default IndexPage
+export default WePage
