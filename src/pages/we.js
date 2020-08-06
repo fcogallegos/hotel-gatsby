@@ -1,9 +1,14 @@
 import React from "react"
 import Layout from '../components/layout';
+import ContentWe from '../components/contentWe';
+
+
 
 const WePage = () => (
   <Layout>
-    <h1>We</h1>
+
+    <ContentWe />
+ 
   </Layout>
 )
 
