@@ -20,7 +20,13 @@ const useRooms = () => {
           }
     `);
 
-    console.log(data);
+   return data.allDatoCmsRoom.nodes.map(room => ({
+       title: room.title,
+       id: room.id,
+       content: room.content,
+       image: room.image,
+       slug: room.slug,
+   }))
     
 }
  
