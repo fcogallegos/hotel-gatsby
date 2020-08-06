@@ -29,7 +29,10 @@ const IndexPage = () => {
 
       <ul>
         {rooms.map(room => (
-          <RoomPreview />
+          <RoomPreview 
+            id={room.id}
+            room={room}
+          />
         ))}
       </ul>
 
