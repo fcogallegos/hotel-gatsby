@@ -1,6 +1,15 @@
 import React from 'react';
 import { css } from '@emotion/core';
+import styled from '@emotion/styled';
+import { Link } from 'gatsby';
 import Navegation from './nav';
+
+
+const LinkHome = styled(Link)`
+    color: #FFF;
+    text-align: center;
+    text-decoration: none;
+`;
 
 const Header = () => {
     return ( 
@@ -22,12 +31,9 @@ const Header = () => {
                     }
                 `}
             >
-                <h1
-                    css={css`
-                        color: #fff;
-                        text-align: center;
-                    `}
-                >Gatsby Hotel</h1>
+                <LinkHome
+                    to='/'
+                ><h1>Gatsby Hotel</h1></LinkHome>
 
                 <Navegation />
             </div>    
