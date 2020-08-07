@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './header';
+import Footer from './footer';
 import Helmet from 'react-helmet';
 import { Global, css } from '@emotion/core';
 
@@ -46,6 +47,7 @@ const Layout = (props) => {
 
             <Header />
             {props.children}
+            <Footer />
         </>    
      );
 }
