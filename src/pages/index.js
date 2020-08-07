@@ -1,10 +1,24 @@
 import React from "react"
 import { css } from '@emotion/core';
+import styled from '@emotion/styled';
 import Layout from '../components/layout';
 import ImageHotel from '../components/imageHotel';
 import ContentIndex from '../components/contentIndex';
 import RoomPreview from '../components/roomPreview';
 import useRooms from '../hooks/use-rooms';
+
+
+const ListedRooms = styled.ul`
+  max-width: 1200px;
+  width: 95%;
+  margin: 4rem auto 0 auto;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+  }
+`;
 
 
 const IndexPage = () => {
@@ -27,14 +41,14 @@ const IndexPage = () => {
         `}
       >Our Rooms</h2>
 
-      <ul>
+      <ListedRooms>
         {rooms.map(room => (
           <RoomPreview 
             id={room.id}
             room={room}
           />
         ))}
-      </ul>
+      </ListedRooms>
 
     </Layout>
   )
